@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-trail"></div>
+    <nav>
+        <div class="logo"> My Portfolio</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+        <svg class="sun-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+    </button>
+
+    <section id="home">
+        <div class="hero">
+            <div class="hero-grid">
+                <!-- Left Content -->
+                <div class="hero-content" data-aos="fade-right">
+                    <span class="badge">Driven to Create Impact</span>
+                    <h1>
+                        <small>Leemo-ui</small>
+                        <span class="gradient-text">Web Developer</span>
+                    </h1>
+                    <div class="typing-wrapper">
+                        <span class="typed-text"></span>|
+                    </div>
+                    <p class="hero-description">
+                        I build modern, high-performing websites and applications 
+                        that deliver exceptional user experiences.
+                    </p>
+                    
+                    <div class="tech-stack">
+                        <span class="tech-badge">React</span>
+                        <span class="tech-badge">JavaScript</span>
+                        <span class="tech-badge">Next.js</span>
+                        <span class="tech-badge">Figma</span>
+                    </div>
+                    
+                    <div class="cta-buttons">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-outline">Contact Me</a>
+                    </div>
+                    
+                    <div class="social-links-hero">
+                        <a href="https://github.com/Leemo-ui" target="_blank"><i data-lucide="github"></i></a>
+                        <a href="https://www.linkedin.com/in/john-merkit-9a470b351/"><i data-lucide="linkedin"></i></a>
+                        <a href="https://www.instagram.com/limoojohnte/"><i data-lucide="instagram"></i></a>
+                        <a href="https://wa.me/254759595523"><i data-lucide="message-circle"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Right Content -->
+                <div class="hero-illustration" data-aos="fade-left">
+                    <div class="code-window">
+                        <div class="code-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="code-content">
+                            <pre><code>
+<span class="keyword">const</span> <span class="variable">developer</span> = {
+    name: <span class="string">'LimoJohn'</span>,
+    skills: [<span class="string">'Web Dev'</span>, 
+            <span class="string">'UI/UX'</span>, 
+            <span class="string">'Frontend'</span>],
+    passion: <span class="string">'Creating Impact'</span>
+};</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="section-divider">
+        <div class="wave"></div>
+    </div>
+    
+    <section id="about">
+        <div class="container">
+            <h2 data-aos="fade-right">Hello, I'm</h2>
+            <h1 class="gradient-name" data-aos="fade-right" data-aos-delay="100">LimoJohn</h1>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="lead-text" data-aos="fade-up">
+                        A passionate Web Developer and UI/UX Designer with a focus on building modern, high-performance websites. I specialize in creating user-friendly digital experiences that are both visually appealing and functional.
+                    </p>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                            <i data-lucide="code"></i>
+                            <h3>0</h3>
+                            <p>Total Projects</p>
+                        </div>
+                        <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                            <i data-lucide="award"></i>
+                            <h3>0</h3>
+                            <p>Certificates</p>
+                        </div>
+                        <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                            <i data-lucide="clock"></i>
+                            <h3>2</h3>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+                    
+                    <div class="cta-group">
+                        <a href="cv.pdf" class="btn btn-primary" download>Download CV</a>
+                        <a href="#projects" class="btn btn-outline">View Projects</a>
+                    </div>
+                </div>
+                
+                <div class="about-image" data-aos="fade-left">
+                    <div class="image-container">
+                        <!-- Image is now handled by CSS background -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tech-stack">
+        <div class="container">
+            <h2 class="section-title">Portfolio Showcase</h2>
+            <p class="section-subtitle">Explore my journey through projects, certifications, and technical expertise. Each section represents a milestone in my continuous learning path.</p>
+            
+            <div class="showcase-nav">
+                <div class="nav-item" data-content="projects">
+                    <i data-lucide="code"></i>
+                    <span>Projects</span>
+                </div>
+                <div class="nav-item" data-content="certificates">
+                    <i data-lucide="award"></i>
+                    <span>Certificates</span>
+                </div>
+                <div class="nav-item active" data-content="tech-stack">
+                    <i data-lucide="layers"></i>
+                    <span>Tech Stack</span>
+                </div>
+            </div>
+
+            <div class="tech-contents">
+                <div id="projects" class="tech-content">
+                    <div class="projects-grid">
+                        <!-- Add your projects here -->
+                        <p>Projects content will go here</p>
+                    </div>
+                </div>
+
+                <div id="certificates" class="tech-content">
+                    <div class="certificates-grid">
+                        <!-- Add your certificates here -->
+                        <p>Certificates content will go here</p>
+                    </div>
+                </div>
+
+                <div id="tech-stack" class="tech-content active">
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <img src="assets/html5.svg" alt="HTML5">
+                            <span>HTML</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="assets/css3.svg" alt="CSS3">
+                            <span>CSS</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="assets/javascript.svg" alt="JavaScript">
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="assets/tailwind.svg" alt="Tailwind CSS">
+                            <span>Tailwind CSS</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="assets/react.svg" alt="ReactJS">
+                            <span>ReactJS</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="assets/vite.svg" alt="Vite">
+                            <span>Vite</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="assets/nodejs.svg" alt="Node.js">
+                            <span>Node JS</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="assets/bootstrap.svg" alt="Bootstrap">
+                            <span>Bootstrap</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="assets/firebase.svg" alt="Firebase">
+                            <span>Firebase</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="assets/material-ui.svg" alt="Material UI">
+                            <span>Material UI</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="assets/vercel.svg" alt="Vercel">
+                            <span>Vercel</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="assets/sweetalert2.svg" alt="SweetAlert2">
+                            <span>SweetAlert2</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="section-divider">
+        <div class="wave"></div>
+    </div>
+    
+    <section id="projects">
+        <div class="container">
+            <h2 data-aos="fade-right">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="mockup-frame">
+                        <div class="mockup-screen">
+                            <img src="project-sms.jpg" alt="Student Management System" class="parallax">
+                        </div>
+                    </div>
+                    <h3>Student Management System</h3>
+                    <p>A comprehensive system built with modern technologies that manages student data with both database and file storage options. Features include student registration, grade management, and data persistence.</p>
+                    <div class="tech-stack-project">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">Database</span>
+                        <span class="tech-badge">File Systems</span>
+                    </div>
+                    <a href="https://github.com/Leemo-ui/student-management.git" class="btn btn-primary" target="_blank">
+                        View Project <i data-feather="arrow-right"></i>
+                    </a>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="mockup-frame">
+                        <div class="mockup-screen">
+                            <img src="project2.jpg" alt="Project 2" class="parallax">
+                        </div>
+                    </div>
+                    <h3>Project 2</h3>
+                    <p>Project description goes here</p>
+                    <a href="#" class="btn btn-primary">
+                        View Project <i data-feather="arrow-right"></i>
+                    </a>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="mockup-frame">
+                        <div class="mockup-screen">
+                            <img src="project3.jpg" alt="Project 3" class="parallax">
+                        </div>
+                    </div>
+                    <h3>Project 3</h3>
+                    <p>Project description goes here</p>
+                    <a href="#" class="btn btn-primary">
+                        View Project <i data-feather="arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="section-divider">
+        <div class="wave"></div>
+    </div>
+    
+    <section id="contact">
+        <div class="container">
+            <h2 data-aos="fade-right">Contact Me</h2>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <p class="contact-text">Have something to discuss? Send me a message and let's talk.
+
+                    </p>
+                    <div class="social-links">
+                        <a href="https://wa.me/254759595523" target="_blank" class="social-link whatsapp">
+                            <i data-lucide="message-circle"></i>
+                            <span>WhatsApp</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/john-merkit-9a470b351/" target="_blank" class="social-link linkedin">
+                            <i data-lucide="linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/Leemo-ui" target="_blank" class="social-link github">
+                            <i data-lucide="github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.instagram.com/limoojohnte/" target="_blank" class="social-link instagram">
+                            <i data-lucide="instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="https://www.facebook.com/leemojohnte" target="_blank" class="social-link facebook">
+                            <i data-lucide="facebook"></i>
+                            <span>Facebook</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form" data-aos="fade-left">
+                    <form>
+                        <input type="text" placeholder="Name" required>
+                        <input type="email" placeholder="Email" required>
+                        <textarea placeholder="Message" required></textarea>
+                        <button type="submit" class="btn btn-primary">
+                            Send Message <i data-feather="send"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 LimoJohn. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        lucide.createIcons();
+        AOS.init({
+            duration: 800,
+            offset: 100,
+            once: true,
+            easing: 'ease-in-out'
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+        feather.replace();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
